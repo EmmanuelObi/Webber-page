@@ -2,12 +2,81 @@
 
 <html>
     <head>
+        <title> PAGE 2</title>
         <link rel="stylesheet" type="text/css" href="file.css"/>
         <style type="text/css">
+
+header::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .logo {
+            float: left;
+        }
+        div img {
+            height: 155px;
+            width: auto;
+            padding: 20px;
+        }
+        nav {
+              float: right;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        nav li {
+            display: inline block;
+            margin-left: 70px;
+            padding-top: 25px;
+
+            position: relative;
+        }
+        nav a {
+            color: #20bcd5 ;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px ;
+        }
+        nav a:hover {
+            color: #000;
+
+        }
+        nav a::before {
+            content: '';
+            display: block;
+            height: 5px;
+            width: 0%;
+            background-color: #444;
+            position: absolute;
+            top: 0;
+            transition: all ease-in-out 250ms;
+        }
+        nav a:hover::before {
+            width: 100%;
+        }
+          
           
         </style>
    </head>
     <body>
+        <header>
+            <div>
+                <img src="logo.jpg" alt="logo" class="logo">
+    
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="Blog.html">ABOUT ME</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+    
+            </div>
+            </header>
+            <div class="section">
         <div class="section">
 
             <h1><span> MATTERS ARISING IN THE NATION! </span></h1>
@@ -70,7 +139,10 @@ Hundreds of people have been killed in the last year by criminal gangs carrying 
 Such attacks have added to security challenges in Africa’s most populous country,<br/> which is already struggling to contain Boko Haram attacks in the northeast and communal violence over grazing rights in central states.<br/>
             </p>
             <br/>
-            <a href="Blog.html" > ABOUT ME!</a>  <a href="index.html"> GO BACK <!DOCTYPE html>
+            <a href="flexbox.html" > FLEXBOX CONTENT </a> 
+            <br/>
+            <br/>
+             <a href="index.html"> GO BACK <!DOCTYPE html>
             <html lang="en">
             <head>
                 <meta charset="UTF-8">

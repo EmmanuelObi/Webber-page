@@ -3,10 +3,63 @@
 
 <html>
     <head>
-         <title>My Webpage!</title>
+         <title>FLEXBOX!</title>
          <link rel="stylesheet" type="text/css" href="file.css"/>
          <meta name="viewport" content="width=device-width" initial-scale="1.0">
          <style>
+
+header::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .logo {
+            float: left;
+        }
+        div img {
+            height: 155px;
+            width: auto;
+            padding: 20px;
+        }
+        nav {
+              float: right;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        nav li {
+            display: inline block;
+            margin-left: 70px;
+            padding-top: 25px;
+
+            position: relative;
+        }
+        nav a {
+            color: #20bcd5 ;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px ;
+        }
+        nav a:hover {
+            color: #000;
+
+        }
+        nav a::before {
+            content: '';
+            display: block;
+            height: 5px;
+            width: 0%;
+            background-color: #444;
+            position: absolute;
+            top: 0;
+            transition: all ease-in-out 250ms;
+        }
+        nav a:hover::before {
+            width: 100%;
+        }
+          
              .container {
                  display: flex;
                  flex-wrap: wrap;
@@ -21,20 +74,43 @@
          </style>
     </head>
     <body>
+        <header>
+            <div class="section">
+                <img src="logo.jpg" alt="logo" class="logo">
+    
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="Blog.html">ABOUT ME</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+    
+            </div>
+            </header>
+            <div class="section">
         <div class="container">
-            <div>1.</div>
-            <div>2.</div>
-            <div>3.</div>
-            <div>4.</div>
-            <div>5.</div>
-            <div>6.</div>
-            <div>7.</div>
-            <div>8.</div>
-            <div>9.</div>
-            <div>10.</div>
-            <div>11.</div>
-            <div>12.</div>
+            <div>1.we have just found out that the lockdown is going to be extended by 1 whole week.</div>
+            <div>2.after which everyone will be allowed to leave the house.</div>
+            <div>3.but with certain conditions: like a curfew, wearing protective equipment and a few others. </div>
+            <div>4.the lockdown has gone on for about a month now and seems to be coming to an end in a weeks time</div>
+            <div>5.we have been given precautions to take in other to avoid the spread of the corona virus</div>
+            <div>6. we are going to wear protective gears like the nose masks, gloves and some others</div>
+            <div>7.even a curfew will be imposed till further notice. the time of the curfew being 8pm to 6am.</div>
+            <div>8.some believe that leaving the house is still not the best solution</div>
+            <div>9.and we should continue to stay indoors. but others believe staying indoors will only,</div>
+            <div>10. cause people to die of hunger, because of recent concerns being raised by the masses.</div>
+            <div>11.saying that they don't have the necessary resources to stay indoors for much longer.</div>
+            <div>12.personally i feel this is just a play by the government. trying to make people stay indoors unconventionally</div>
+            <div>13.delibrately trying to make the number of cases increase, so that people can realise on their own that staying home is best.</div>
+            <div>14.which i must say is a smart move, but a truly brutal one.</div>
+            <div>15.well this is my last flexbox and i've pretty much strectched the matter enough. soooo the end.</div>
         </div>
+        <br/>
+        <a href="Blog.html" >ABOUT US</a>
+        <br/>
+        <br/>
+         <a href="index2.html">GO BACK</a>
 
     </body>
 </html>

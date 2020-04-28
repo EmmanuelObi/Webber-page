@@ -4,6 +4,59 @@
     <head>
         <link rel="stylesheet" type="text/css" href="file.css"/>
         <style type="text/css">
+
+header::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .logo {
+            float: left;
+        }
+        div img {
+            height: 155px;
+            width: auto;
+            padding: 20px;
+        }
+        nav {
+              float: right;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        nav li {
+            display: inline block;
+            margin-left: 70px;
+            padding-top: 25px;
+
+            position: relative;
+        }
+        nav a {
+            color: #20bcd5 ;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px ;
+        }
+        nav a:hover {
+            color: #000;
+
+        }
+        nav a::before {
+            content: '';
+            display: block;
+            height: 5px;
+            width: 0%;
+            background-color: #444;
+            position: absolute;
+            top: 0;
+            transition: all ease-in-out 250ms;
+        }
+        nav a:hover::before {
+            width: 100%;
+        }
+          
         
         </style>
         <title>Koliko's Blog</title> 
@@ -11,6 +64,21 @@
 
 
     <body>
+        <header>
+            <div class="section">
+                <img src="logo.jpg" alt="logo" class="logo">
+    
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="Blog.html">ABOUT ME</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+    
+            </div>
+            </header>
+            <div class="section">
 
         <div id="header" class="section">
            <img alt="" class="img-circle" src="faceapp.jpg" />
@@ -121,7 +189,10 @@
              &copy; 2020 My Blog. All rights reserved.
          </div>
          <br />
-         <a href="index2.html"> GO BACK</a>
+         <a href="flexbox.html"> GO BACK</a>
+         <br/>
+         <br/>
+         <a href="index.html"> GO HOME</a>
 
     </body>
 </html>
