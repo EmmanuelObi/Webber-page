@@ -7,19 +7,19 @@ body {
     font-family: 'handlee',cursive;
     font-size: 13pt;
      font-weight: 400;
-    background-color: #efefef;
+    background-color:#43a09d;
     padding: 10px;
     margin: 0;
 }
 h1 {
     font-size: 15pt;
-    color: #20bcd5;
+    color: #444;
     text-align: center;
     padding: 18px 0 18px;
     margin: 0 0 10px 0;
 }
 h1 span {
-    border: 4px dashed #20bcd5;
+    border: 4px dashed #444;
     padding: 10px;
 }
 p {
